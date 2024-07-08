@@ -19,6 +19,9 @@
     "type": "git",
     "url": "git+https://github.com/tkssharma/publish-packages.git"
   },
+  "publishConfig": {
+  "registry": "https://npm.pkg.github.com"
+  },
   "peerDependencies": {
   "react": ">=16"
   },
