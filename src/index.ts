@@ -1,4 +1,3 @@
-export const sayHello = () => {
-  return 'Hello world from my package'
-}
+import MyCounter from './components/app'
 
+export { MyCounter }

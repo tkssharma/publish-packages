@@ -1,19 +1,26 @@
 {
+  "include": ["src"],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ],
   "compilerOptions": {
-    "target": "ES2020",
-    "lib": ["ESNext"],
-    "downlevelIteration": true,
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
     "importHelpers": true,
-    "module": "commonjs",
     "declaration": true,
+    "sourceMap": true,
+    "rootDir": "./src",
+    "outDir": "./dist/esm",
     "strict": true,
-    "pretty": true,
     "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "experimentalDecorators": true,
-    "outDir": "./build",
-    "rootDir": "./src"
-  },
-  "exclude": ["node_modules", "build"]
+    "moduleResolution": "node",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+  }
 }
