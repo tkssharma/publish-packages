@@ -1,4 +1,3 @@
-export const sayHello = () => {
-  return 'Hello world from my package'
-}
-
+export * from "./random-number.module";
+export * from "./random-number.service";
+export * from "./random-number.interface";
